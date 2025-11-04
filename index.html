@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gothic Block Blast</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="ui">
+      <div id="score">Score: 0</div>
+      <div id="level">Level: 1</div>
+      <div id="lives">Lives: ❤️❤️❤️</div>
+      <div id="highScore">High: 0</div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="startScreen" class="overlay">
+      <h1>☩ GOTHIC BLOCK BLAST ☩</h1>
+      <p>Destroy the cursed orbs before they consume your soul...</p>
+      <button id="startBtn">ENTER THE ABYSS</button>
+    </div>
+
+    <div id="gameOverScreen" class="overlay hidden">
+      <h2>☠️ THY SOUL IS LOST ☠️</h2>
+      <p>Final Score: <span id="finalScore">0</span></p>
+      <button id="restartBtn">RETURN FROM THE VOID</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
